@@ -1,0 +1,127 @@
+<!--
+  financials.txt template, core specification 0.1
+  https://financialstxt.org/spec
+
+  Replace everything in [square brackets], then delete every comment, including this
+  one. A published file that contains a comment does not conform, because nothing in it
+  may be hidden from a person reading it (§5.8).
+
+  Keep the headings exactly as written: readers find sections by heading, never by
+  position. Delete an optional section rather than leave it empty.
+
+  Write "revenue rose 24.0%", never "strong revenue growth". Do not address the reader
+  or their model. Judgements belong only in attributed quotes (§5.8).
+
+  Serve the finished file at https://your-domain/.well-known/financials.txt
+  as text/markdown; charset=utf-8.
+-->
+
+# [Legal name, exactly as filed]
+
+> [Annual | Interim] results for the [year | six months] ended [date]. [Audited | Unaudited].
+> Figures in [currency], [in full | in thousands | in millions].
+> Published [date]. Prepared from the filed accounts; see Source.
+
+## Identity
+- Legal name: [exactly as filed]
+- Jurisdiction: [country, and region where it matters]
+- Company number: [registry number, or (none)]
+- LEI: [20-character Legal Entity Identifier, or (none)]
+- Ticker: [exchange and symbol, or (unlisted)]
+
+## Basis
+- Period: [start date] to [end date]
+- Comparative: [start date] to [end date]
+- Status: [audited | reviewed | unaudited]
+- Framework: [IFRS | FRS 102 | US GAAP | other, named]
+- Currency: [ISO 4217 code, e.g. GBP]
+- Units: [as stated, in full | in thousands | in millions]
+- Consolidation: [single entity | group]
+- Profiles: core[, and any market profile, e.g. uk]
+
+## Headline figures
+<!--
+  §5.7 Statutory measures only, as stated in the filed accounts. Revenue, profit or
+  loss before tax and cash at period end are required; if one does not apply to your
+  entity, say why. Adjusted, underlying and like-for-like measures do not go here.
+  §5.2 Every figure needs a prior-period comparative, or a reason there is none.
+  §5.3 Every figure appears in the source document or is arithmetic on figures that do.
+  Add the other statutory measures your filed accounts lead with.
+-->
+| Measure | This period | Prior period | Change |
+|---|---|---|---|
+| Revenue | [ ] | [ ] | [+/-x.x%] |
+| Profit before tax | [ ] | [ ] | [+/-x.x%] |
+| Cash at period end | [ ] | [ ] | [+/-x.x%] |
+
+## Adjusted measures
+<!--
+  Optional. The only place an adjusted measure may appear (§5.7). Each needs its name
+  with abbreviations written out, a plain definition, a comparative, the nearest
+  statutory measure with its comparative, and the page where the source reconciles them.
+-->
+- [Adjusted measure, abbreviations written out]: [figure] (prior period [figure]).
+  [What it is, in plain words.] Statutory [nearest measure]: [figure] (prior period
+  [figure]). Reconciled on page [n].
+
+## What changed
+*Movements of [x]% or more, or [amount] or more, whichever is larger.*
+<!--
+  §5.1 Every movement at or above the threshold goes in, favourable or adverse. The rest
+  of the file depends on this rule. Leaving out the bad movements is the commonest way a
+  summary misleads, and the first thing a checker looks for.
+  §5.8 Follow the order of the headline table.
+  §5.7 Put a movement in an adjusted measure beside the movement in its statutory one.
+  §5.3 Mark a derived figure as derived, and say what it is derived from.
+  §5.6 You may say that two things moved in the same period. Say one caused the other
+  only if the source document does.
+-->
+- [Measure] [rose | fell] [x.x]% to [figure].
+
+## Quotes
+<!--
+  Optional. Verbatim from the source document, attributed, with the page (§4.3, §5.3).
+  This is the only place a judgement may appear. No more than one quote per person, and
+  the section no longer than What changed. A quote about the future goes under Outlook.
+-->
+- [Name], [role] ([section], page [n]): "[Exact words.]"
+
+## Outlook
+*Forward-looking. Not a forecast and not a guarantee.*
+<!--
+  §5.5 Anything that is not a statement of past fact goes here and nowhere else,
+  including quotes that look forward. Optional in the core; some profiles require it
+  (uk: U2). If you delete this section, nothing else in the file may look forward.
+-->
+- [ ]
+
+## Risks
+<!--
+  Recommended in the core and required by some profiles (uk: U1). Principal risks as
+  the source document describes them, not general remarks about trading conditions.
+-->
+- [Risk]: [one sentence, taken from the source document].
+
+## Document map
+*Pages in the source PDF, counting the cover as page 1.*
+<!--
+  Recommended. Use the PDF's own page index, not the printed page numbers. Include at
+  least the primary statements, the notes, the auditor's report where there is one, and
+  the reconciliation of any adjusted measure.
+-->
+- Strategic report: [n-n]
+- Independent auditor's report: [n-n]
+- Primary statements: [n-n]
+- Notes to the accounts: [n-n]
+
+## Source
+<!--
+  §5.4 The hash is of the exact file at the Document URL. If you re-publish the
+  document, the hash changes, so update both together.
+    macOS / Linux:  shasum -a 256 report.pdf
+    Windows:        certutil -hashfile report.pdf SHA256
+-->
+- Document: [URL of the authoritative document]
+- Published: [YYYY-MM-DD]
+- SHA-256: [64 hexadecimal characters]
+- Filed: [registry, YYYY-MM-DD]

@@ -1,0 +1,79 @@
+# Norwood & Kite Design Ltd
+
+> Annual results for the year ended 30 September 2026. Audited. Figures in GBP, in full.
+> Published 4 October 2026. Prepared from the filed accounts; see Source.
+
+## Identity
+- Legal name: Norwood & Kite Design Ltd
+- Jurisdiction: United Kingdom (England and Wales)
+- Company number: 09847213
+- LEI: (none)
+- Ticker: (unlisted)
+
+## Basis
+- Period: 1 October 2025 to 30 September 2026
+- Comparative: 1 October 2024 to 30 September 2025
+- Status: audited
+- Framework: FRS 102
+- Currency: GBP
+- Units: as stated, in full
+- Consolidation: single entity
+- Profiles: core, uk
+
+## Headline figures
+| Measure | This period | Prior period | Change |
+|---|---|---|---|
+| Revenue | 332,890 | 268,400 | +24.0% |
+| Cost of sales | 97,455 | 72,100 | +35.2% |
+| Gross profit | 235,435 | 196,300 | +19.9% |
+| Operating expenses | 199,800 | 171,250 | +16.7% |
+| Profit before tax | 35,635 | 25,050 | +42.3% |
+| Cash at period end | 88,120 | 61,400 | +43.5% |
+
+## What changed
+*Movements of 5% or more, or 10,000 or more, whichever is larger.*
+
+- Revenue rose 24.0% to 332,890, with growth weighted to the second half: the final
+  three months contributed 114,550, against 72,560 in the first three.
+- Cost of sales rose 35.2%, faster than revenue.
+- Gross margin fell 2.4 points to 70.7% (prior period 73.1%). Derived from revenue and
+  gross profit above.
+- Operating expenses rose 16.7% to 199,800.
+- Profit before tax rose 42.3% to 35,635.
+- Cash at period end rose 43.5% to 88,120.
+
+## Quotes
+- Hannah Norwood, Managing Director (strategic report, page 4): "We won more work this
+  year than in any year before, and kept less of each pound of it."
+
+## Outlook
+*Forward-looking. Not a forecast and not a guarantee.*
+
+- The order book at 30 September 2026 stood at 141,000, covering approximately five
+  months of revenue at the current run rate.
+- The strategic report identifies recruitment as the principal constraint on delivery
+  capacity in the coming year.
+- Hannah Norwood, Managing Director (strategic report, page 6): "Next year's measure of
+  success is margin, not growth."
+
+## Risks
+- Client concentration: the three largest clients represented 46% of revenue (prior
+  period 52%).
+- Recruitment: delivery capacity is constrained by hiring in a competitive market.
+- Margin: cost of sales has grown faster than revenue in each of the last two periods.
+
+## Document map
+*Pages in the source PDF, counting the cover as page 1.*
+- Strategic report: 3-9
+- Principal risks: 7-8
+- Directors' report: 10-11
+- Independent auditor's report: 12-14
+- Primary statements: 15-18
+- Notes to the accounts: 19-31
+
+## Source
+- Document: https://example.com/reports/2026-annual.pdf
+- Published: 2026-10-04
+- SHA-256: 3f786850e387550fdab836ed7e6dc881de23001b7a4f0c9b2e5d8a6c1f3b9e02
+- Filed: Companies House, 2026-10-04
+- Register: https://find-and-update.company-information.service.gov.uk/company/09847213
